@@ -1,0 +1,400 @@
+Archer:
+    type: sentry
+    faction: Weyland
+    strength: 6
+    cost:
+        - 4
+        - forfiet_agenda
+    influence: 2
+    subroutines:
+        - 
+            type: corp_gains
+            amount: 2
+        -
+            type: trash_program
+        -
+            type: trash_program
+        -
+            type: etr
+Caducues:
+    type: sentry
+    faction: Weyland
+    strength: 3
+    cost: 3
+    influence: 2
+    subroutines:
+        - 
+            trace: 3
+            type: corp_gains
+            amount: 3
+        -
+            trace: 2
+            type: etr
+
+Cell Portal:
+    type: code_gate
+    faction: Jinteki
+    strength: 5
+    cost: 7
+    influence: 2
+    subroutines:
+        - 
+            type: cell_portal
+
+Chimera:
+    type: mythic
+    faction: None
+    strength: 0
+    cost: 2
+    influence: 0
+    subroutines:
+        -
+            type: etr        
+Chum:
+    type: code_gate
+    faction: Jinteki
+    strength: 4
+    cost: 1
+    influence: 1
+    subroutines:
+        - 
+            type: chum
+
+Data Mine:
+    type: sentry
+    faction: Jinteki
+    strength: 0
+    cost: 2
+    influence: 2
+    subroutines:
+        - 
+            type: net_damage
+            amount: 1
+            also: destroy
+
+Data Raven:
+    type: sentry
+    faction: NBN
+    strength: 4
+    cost: 4
+    influence: 2
+    encounter:
+        - add_tag
+    hosted: 
+        - add_tag
+    subroutines:
+        - 
+            type: add_power_counter
+Draco:
+    type: sentry
+    faction: None
+    strength: 0
+    cost: 1
+    influence: 0
+    rez: 
+        - pay_for_x_plus_one_strength_counters
+    subroutines:
+        - 
+            type: etr
+            trace: 2
+            also: add_tag
+Enigma:
+    type: code_gate
+    faction: None
+    strength: 2
+    cost: 3
+    influence: 0
+    subroutines:
+        - 
+            type: etr
+        - 
+            type: lose_click
+Hadrian's Wall:
+    type: barrier
+    faction: Weyland
+    strength: 7
+    cost: 10
+    influence: 3
+    advancable: true
+    subroutines:
+        - 
+            type: etr
+        - 
+            type: etr
+Heimdall 1.0:
+    type: barrier
+    subtype: biroid
+    faction: HB
+    strength: 6
+    cost: 8
+    influence: 2
+    subroutines:
+        - 
+            type: brain_damage
+            amount: 1
+        - 
+            type: etr
+        - 
+            type: etr
+Hunter:
+    type: sentry
+    faction: None
+    strength: 4
+    cost: 1
+    influence: 0
+    subroutines:
+        - 
+            type: add_tag
+            trace: 3
+
+Ice Wall:
+    type: barrier
+    faction: Weyland
+    strength: 1
+    cost: 1
+    influence: 1
+    advancable: true
+    subroutines:
+        - 
+            type: etr
+
+Ichi 1.0:
+    type: sentry
+    subtype: biroid
+    faction: HB
+    strength: 4
+    cost: 6
+    influence: 2
+    subroutines:
+        - 
+            type: trash_program
+        - 
+            type: trash_program
+        - 
+            type: brain_damage
+            amount: 1
+            trace: 1
+            also: add_tag
+Janus 1.0:
+    type: sentry
+    faction: HB
+    strength: 8
+    cost: 15
+    influence: 3
+    subroutines:
+        - 
+            type: brain_damage
+            ammount: 1
+        - 
+            type: brain_damage
+            ammount: 1
+        - 
+            type: brain_damage
+            ammount: 1
+        - 
+            type: brain_damage
+            ammount: 1
+Matrix Analyzer:
+    type: sentry
+    faction: NBN
+    strength: 3
+    cost: 1
+    influence: 2
+    encounter:
+        - pay_one_to_advance_something
+    subroutines:
+        - 
+            type: add_tag
+            trace: 2
+Neural Katana:
+    type: sentry
+    faction: Jinteki
+    strength: 3
+    cost: 4
+    influence: 2
+    subroutines:
+        - 
+            type: net_damage
+            amount: 3
+Pop-up Window:
+    type: code_gate
+    subtype: advertisment
+    faction: NBN
+    strength: 0
+    cost: 0
+    influence: 1
+    encounter:
+        - 
+            type: corp_gains
+            amount: 1
+    subroutines:
+        - 
+            type: runner_pays_one_or_etr
+Rototurret:
+    type: sentry
+    faction: HB
+    strength: 0
+    cost: 4
+    influence: 1
+    subroutines:
+        - 
+            type: etr
+        - 
+            type: trash_program
+
+Sensei:
+    type: code_gate
+    faction: Jinteki
+    strength: 5
+    cost: 3
+    influence: 1
+    subroutines:
+        - 
+            type: sensei
+
+Shadow:
+    type: sentry
+    faction: Weyland
+    strength: 3
+    cost: 1
+    influence: 1
+    subroutines:
+        - 
+            type: add_tag
+            trace: 3
+        - 
+            type: corp_gains
+            amount: 2
+
+Sherlock:
+    type: sentry
+    subtype: biroid
+    faction: HB
+    strength: 5
+    cost: 6
+    influence: 2
+    subroutines:
+        - 
+            type: vanishment
+            trace: 4
+        - 
+            type: vanishment
+            trace: 4
+Snowflake:
+    type: barrier
+    faction: Jinteki
+    strength: 3
+    cost: 1
+    influence: 2
+    subroutines:
+        - 
+            type: snowflake
+
+TMI:
+    type: barrier
+    faction: Jinteki
+    strength: 5
+    cost: 3
+    influence: 2
+    rez:
+        - trace_2_or_derez
+    subroutines:
+        - 
+            type: etr
+
+Tollbooth:
+    type: code_gate
+    faction: NBN
+    strength: 5
+    cost: 8
+    influence: 2
+    encounter: runner_pays_3
+    subroutines:
+        - 
+            type: etr
+
+Victor 1.0:
+    type: code_gate
+    subtype: biroid
+    faction: HB
+    strength: 3
+    cost: 3
+    influence: 2
+    subroutines:
+        - 
+            type: etr
+        - 
+            type: brain_damage
+            amount: 1
+Viper:
+    type: code_gate
+    faction: HB
+    strength: 4
+    cost: 3
+    influence: 1
+    subroutines:
+        - 
+            type: lose_click
+            trace: 3
+        - 
+            type: etr
+            trace: 3
+
+Wall of Static:
+    type: barrier
+    faction: None
+    strength: 3
+    cost: 3
+    influence: 0
+    subroutines:
+        - 
+            type: etr
+
+Wall of Thorns:
+    type: barrier
+    faction: Jinteki
+    strength: 5
+    cost: 8
+    influence: 1
+    subroutines:
+        - 
+            type: net_damage
+            amount: 2
+        -   
+            type: etr
+
+Woodcutter:
+    type: sentry
+    faction: Weyland
+    strength: 2
+    cost: 4
+    advancable:
+        - 
+            effect: add_subroutine
+            subroutine:
+                -
+                    type: net_damage
+                    amount: 1
+    subroutines:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
